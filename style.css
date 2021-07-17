@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    font-family: "Bitter", cursive;
+    position: relative;
+    color:#171717;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+
+.contact {
+    display: none; 
+}
+
+/*********************************** HEADER ****************************/
+
+header {
+    background: url(/assets/img/philadelphia-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: #f1f1f1;
+    position: relative;
+}
+
+.container {
+    height: inherit;
+    background-color: #171717;
+    opacity: 89%;
+}
+
+.title {
+    font-family: "Sofia", cursive ;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.shape-bg {
+    position: relative;
+    left: 250px;
+    top: 90px;
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+    border-radius: 50%;
+}
+
+.description {
+    position: absolute;
+    left: 350px;
+    top: 150px;
+
+}
+.description h2 {
+    font-family: 'Bitter', cursive;
+    font-size: 2em;
+}
+.description :nth-child(1) {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #F3A723;
+    position: absolute;
+    top: -100px;
+}
+.description :nth-child(2) {
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+.description :nth-child(3) {
+    position: absolute;
+    width: 150px;
+    line-height: 1.5;
+}
+.description :nth-child(4) {
+    position: absolute;
+    left: 155px;
+}
+.description :nth-child(5) {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    font-family: 'Great Vibes', cursive;
+    color: #F3A723;
+    font-size: 4em;
+} 
+
+.picture {
+    width: inherit;
+    height: inherit;
+    clip-path: circle(50%);
+    background: url(/assets/img/Mister.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -100px;
+}
+.contact {
+    position: absolute;
+    bottom: 150px;
+    right: 300px;
+    border-radius: 50%;
+    border: 2px solid #A5A5A5;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.contact a {
+    margin: 0;
+    font-size: 1.9em;
+    text-align: center;
+}
+.creator {
+    position: absolute;
+    bottom: 50px;
+    right: 90px;
+    opacity: 50%;
+}   
+
+/************************* About ME *******************************/
+
+.first-section {
+    height: 800px;
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', cursive;
+}
+.first-section h2{
+    font-size: 2em;
+    padding: 100px 0;
+}
+.about-me h2 span {
+    color: #F3A723;
+}
+
+.about-me p {
+    padding: 10px 50px;
+    color: #A5A5A5;
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+
+/*********************** Work experience **************************/
+.second-section {
+    background-color: #171717;
+    color: #f1f1f1;
+    height: 800px;
+    max-width: 100%;
+}
+.work-experience {
+    margin: 100px;
+}
+.work-experience h2 {
+    padding: 50px 0;
+    font-size: 2em;
+}
+h2 span {
+    color: #F3A723;
+}
+.experience {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 0 0;
+}
+.experience h2 {
+    font-size: 2em;
+    color: #F3A723;
+}
+.portfolio-exp {
+    display: flex;
+    padding: 20px;
+}
+.techno {
+    margin: 0 20px;
+}
+.techno > p {
+    padding: 10px;
+}
+.img-exp {
+    width: 100px;
+    height: 100px;
+    background: no-repeat;
+    background-size:  cover;
+    border-radius: 10px;
+}
+
+
+/***************************** Education ***************************/
+
+.third-section {
+    height: 800px;
+    max-width: 100%;
+    color:#f1f1f1;
+    background: url(./assets/img/university.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-university {
+    background-color: #171717;
+    opacity: 90%;
+    height: inherit;
+    position: relative;
+}
+
+.title-education {
+    font-size: 3em;
+    padding: 50px 50px;
+}
+
+.learning {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.school, 
+.tutorial {
+    display: block;
+    margin: 20px;
+    text-align: center;
+}
+.school {
+    float: left;
+    position: absolute;
+    left: -30px;
+}
+.tutorial {
+    float: right;
+}   
+
+.school :nth-child(1),
+.tutorial :nth-child(1) {
+    padding: 15px;
+    font-size: 1.5em;
+    font-family: 'Josefine Sans', cursive;
+}
+.school :nth-child(2),
+.tutorial :nth-child(2) {
+    margin: 0 0 15px 0;
+}
+.school :nth-child(3),
+.tutorial :nth-child(3) {
+    font-size: 15px;
+    opacity: 70%;
+}
+.line {
+    border-left: 1px solid #707070;
+    height: 325px;
+    position: absolute;
+    left: 50%;
+    top: -125px;
+
+}
+
+.learning::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title-skills {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    color: #F3A723;
+    font-weight: bolder;
+    font-family: 'Josefine Sans', cursive;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.electromechanical {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.delevry {
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.web-development {
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.designs {
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.electromechanical p,
+.delevry p,
+.web-development p,
+.designs p {
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.opacity {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 260px;
+    background-color: #171717;
+    opacity: 50%;
+}
+
+
+/***************************** SKILLS Language *********************/
+
+.fourth-section {
+    height: 800px;
+    max-width: 100%;
+    color:#f1f1f1;
+}
+.bg-language {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: inherit;
+}
+.title-language {
+    text-align: center;
+    font-size: 2em;
+    padding: 100px;
+    font-family: 'Josefine Sans', cursive;
+}
+
+.title-language p span {
+    color: #F3A723;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.english,
+.arabic,
+.frensh {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.english {
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.arabic {
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.frensh {
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.img-england {
+    margin: 20px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url(./assets/icons/united-kingdom.png) no-repeat;
+    background-size: cover;
+}
+.img-tunisia {
+    margin: 20px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url(./assets/icons/tunisia.png) no-repeat;
+    background-size: cover;
+}
+.img-france {
+    margin: 20px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url(./assets/icons/france.png) no-repeat;
+    background-size: cover;
+}
+
+.english :nth-child(2) {
+    padding: 25px;
+    font-size: 1.8em;
+    color: #18252E;
+    font-weight: bolder;
+}
+.english :nth-child(3) {
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #18252e;
+    -webkit-text-fill-color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.arabic :nth-child(2) {
+    padding: 25px;
+    font-size: 1.8em;
+    color: #7D1104;
+    font-weight: bolder;
+}
+.arabic :nth-child(3) {
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #7D1104;
+    -webkit-text-fill-color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.frensh :nth-child(2) {
+    padding: 25px;
+    font-size: 1.8em;
+    color: #1879C7;
+    font-weight: bolder;
+}
+.frensh :nth-child(3) {
+    font-size: 1.5em;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #1879C7;
+    -webkit-text-fill-color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/************************ LAST SECTION *****************************/
+
+.last-section {
+    height: 800px;
+    max-width: 100%;
+    color:#f1f1f1;
+    background: url(./assets/img/montain.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bg-last-section {
+    height: inherit;
+    background-color: #000000;
+    opacity: 60%;
+}
+.css {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    bottom: 400px;
+    left: 900px;
+    height: 20px;
+    animation: Myfirst 10s linear 3s infinite normal forwards;
+}
+.html {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    bottom: 420px;
+    left: 450px;
+    height: 20px;
+    animation: Myfirst 10s linear 3s infinite normal forwards;
+}
+.adobe-xd {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    bottom: 320px;
+    left: 550px;
+    height: 20px;
+    animation: Myfirst 10s linear 3s infinite normal forwards;
+}
+.js {
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    bottom: 300px;
+    left: 800px;
+    height: 20px;
+    animation: Myfirst 10s linear 3s infinite normal forwards;
+}
+.css p,
+.html,
+.adobe-xd,
+.js {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+@keyframes Myfirst {
+    0% {height: 0px;}
+    25% {height: 90px;}
+    50% {height: 150px;}
+    60% {height: 200px;}
+    70% {height: 250px;}
+    75% {height: 250px;}
+    100% {height: 250px;}
+}
+
+/*************************************  FOOTER ***************************/
+
+.container-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #171717;
+    color: #f1f1f1;
+    opacity: 90%;
+}
+
+a {
+    list-style: none;
+    color: #f1f1f1;
+}
+
+.network {
+    display: flex;
+    justify-content: center;
+}
+
+.network > a {
+    margin: 50px;
+    font-size: 1.5em;
+    text-align: center;
+}
+a:hover {
+    color: #FFFFFF;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+.information{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0 0 0;
+}
+
+.from,
+.copyright {
+    font-size: 0.8em;
+}
+
+
+
+
+/************************************** Responsive ******************************************/
+
+
+/********************** Laptop ***********************/
+@media screen and (max-width: 1024px) and (min-width: 900px) {
+    .shape-bg {
+        left: 150px;
+    }
+    .css {
+        left: 200px
+    }
+    
+}
+
+
+
+/*********************** Tablet ***********************/
+
+@media screen and (max-width: 900px) and (min-width: 745px) {
+    .shape-bg {
+        position: relative;
+        left: 100px;
+    }
+    .contact {
+        right: 200px;
+        bottom: 100px;
+    }
+    .first-section {
+        height: unset;
+        width: unset;
+        margin: unset;
+    }
+    .about-me {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .title-education {
+        font-size: 1.5em;
+        margin: 0 50px 50px 50px;
+    }
+    .languages {
+        justify-content: center;
+    }
+    .css {
+        left: 200px;
+    }
+    .js {
+        left: 290px;
+    }
+}
+
+/*************************** Mobile ********************************/
+
+@media screen and (max-width: 745px) {
+    .header {
+        background: url(./assets/img-phone/philadelphia-bg-mobile.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .container {
+        background: none;
+        opacity: unset;
+        
+    }
+    .title {
+        font-size: 0.8em;
+    }
+    .shape-bg {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 200px;
+        height: 200px;
+    }
+    .description {
+        position: absolute;
+        left: 0;
+        top: 430px;
+    }
+    .picture {
+        right: 0;
+        left: 50px;
+    }
+    .contact {
+        right: unset;
+        bottom: 30px;
+    }
+    /********************** About ME MOBILE **********/
+    .first-section {
+        height: unset;
+        max-width: 80%;
+    }
+    .about-me p {
+        padding: unset;
+        font-size: unset;
+    }
+
+    /************** Work Exp Mobile ******************/
+    .second-section {
+        max-width: 100%;
+        height: unset;
+    }
+    .work-experience {
+        margin: unset;
+    }
+    .experience {
+        display: block;
+        padding: 10px;
+    }
+
+    /***************** Education ***********************/
+
+    .third-section {
+        background-size: cover;
+        max-width: 100%;
+    }
+    .title-education {
+        font-size: 1em;
+        color: #F3A723;
+    }
+    .line {
+        display: none;
+    }
+    .learning {
+        display: block;
+        width: unset;
+        height: unset;
+    }
+    .school {
+        position: relative;
+        float: unset;
+        left: unset;
+    }
+    .tutorial {
+        display: block;
+        float: unset;
+    }
+    .opacity {
+        z-index: -1;
+    }
+    .skills {
+        display: flex;
+        justify-content: unset;
+        margin: 20px auto;
+        overflow-x: scroll;
+        width: 80%;
+        height: 300px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    /******************** languanges Mobile *************/
+
+    .fourth-section {
+        height: unset;
+        max-width: 100%;
+    }
+    .title-language {
+        padding: 50px;
+    }
+    .languages {
+        flex-flow: wrap;
+    }
+    .english,
+    .arabic,
+    .frensh {
+        margin: 5px;
+    }
+
+    /***************** Last section Mobile ****************/
+
+    .css {
+        left: 30px;
+    }
+    .html {
+        left: 150px;
+    }
+    .adobe-xd {
+        left: 250px;
+    }
+    .js {
+        left: 110px;
+    }
+
+    /***************** Fotter Mobile ****************/
+
+    .network {
+        max-width: 100%;
+        display: block;
+        margin: 25px;
+        text-align: center;
+
+    }
+    .network a {
+        margin: 20px;
+    }
+}
